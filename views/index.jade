@@ -1,0 +1,14 @@
+extends layout
+
+block content
+	h3 Welcome the index page 
+  
+
+	ul
+		for heading in contentful.homePage
+			li 
+				p=heading.heading
+
+
+
+	// p= JSON.stringify(contentful)
