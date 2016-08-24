@@ -20,6 +20,9 @@ module.exports =
         homePage: 
           id: "homePage",
           template: "views/index.jade"
+        portfolioItem:
+          id: "portfolioItem"
+          
   ]
 
   stylus:

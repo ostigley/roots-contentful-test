@@ -3,12 +3,16 @@ extends layout
 block content
 	h3 Welcome the index page 
   
-
+	h5 Headings
 	ul
-		for heading in contentful.homePage
+		for entry in contentful.homePage
 			li 
-				p=heading.heading
+				p=entry.heading
+
+	h5 PortFolio Items
+	for entry in contentful.portfolioItem
+
+		p=entry.heading
 
 
-
-	// p= JSON.stringify(contentful)
+	p= JSON.stringify(contentful)
